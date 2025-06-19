@@ -151,7 +151,20 @@ describe('AppComponent', () => {
   });
 
 
+  it('should correctly add decimal numbers', () => {
+    component.num1 = 20;
+    component.num2 = 40;
+    component.addNumbers();
+    expect(component.sum).toBe(60);
+  });
 
+  
+  it('should correctly add decimal numbers', () => {
+    component.num1 = 20;
+    component.num2 = 40;
+    component.addNumbers();
+    expect(component.sum).toBe(60);
+  });
   
 });
 
